@@ -1,0 +1,1554 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+
+body {
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex: 1 1 auto;
+}
+
+.container {
+	box-sizing: content-box;
+	padding: 0px 15px;
+	max-width: 1143px;
+	margin: 0 auto;
+}
+
+/*--------HEADER-----------*/
+.block-nav {
+	align-items: center;
+	display: flex;
+	min-height: 96px;
+	justify-content: space-between;
+}
+
+.header-logo__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-basis: 57.5%;
+}
+
+@media(max-width: 1056px) {
+	.header-logo__nav {
+		flex-basis: 83%;
+	}
+}
+
+.header-logo {
+	background: url('../images/logo.svg') 0 0 no-repeat;
+	width: 97px;
+	height: 30px;
+	padding-right: 5px;
+}
+
+.header-burger {
+	background: url('../icons/burger1.svg') 0 0 no-repeat;
+	width: 29px;
+	height: 22px;
+}
+
+.header-menu {
+	padding: 0px 5px;
+}
+
+.header-nav {
+	display: flex;
+	gap: 54px;
+}
+
+.header-menu-link {
+	color: #2B3541;
+	cursor: pointer;
+	display: block;
+	font-size: 18px;
+	line-height: 2;
+	font-weight: 400;
+}
+
+.header-menu-link::after {
+	content: ' ';
+	width: 10%;
+	height: 1px;
+	background: transparent;
+	display: block;
+	transition: all .3s ease 0s;
+}
+
+.header-menu-link:hover {
+	color: #181F27;
+}
+
+.header-menu-link:hover::after {
+	width: 100%;
+	background-color: #2B3541;
+}
+
+.header-socials {
+	display: flex;
+	gap: 30px;
+	justify-content: flex-end;
+}
+
+.header-socials__contakt {
+	display: block;
+	transition: all .3s ease 0s;
+	transform: scale(1);
+	opacity: 0.8;
+}
+
+.header-socials__contakt:hover {
+	transform: scale(1.2);
+	opacity: 1;
+}
+/*-------- MAIN__BANNER -----------*/
+.main-banner {
+	padding-top: 226px;
+	position: relative;
+	margin-bottom: 120px;
+	width: 100%;
+}
+
+.main-banner-content {
+	max-width: 676px;
+}
+
+.banner-content-title {
+	margin-bottom: 40px;
+}
+
+.banner-content-title h1 {
+	color: #2B3541;
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: 1.2pt;
+}
+
+.banner-content-subtitle {
+	margin-bottom: 22px;
+}
+
+.banner-content-subtitle h3 {
+	color: #2B3541;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: 1.4pt;
+}
+
+.banner-content-subtitle h3 span {
+	color: #2B3541;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 1.25;
+	letter-spacing: 1.4pt;
+}
+
+.banner-content-text {
+	max-width: 357px;
+	margin: 0px 0px 185px 90px;
+}
+
+.banner-content-text p {
+	color: #2B3541;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 1.1pt;
+	margin-bottom: 35px;
+}
+
+.main-button {
+	border: none;
+	border-radius: 5px;
+	background-color: #FBF138;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
+	gap: 10px;
+	padding: 20px 0px;
+	transition: all .3s ease 0s;
+}
+
+.main-button:hover {
+	background-color: #2B3541;
+	color: #FBF138;
+	cursor: pointer;
+}
+
+.main-button a {
+	padding: 20px 30px;
+	color: #2B3541;
+	text-transform: uppercase;
+	letter-spacing: 0.4pt;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.main-button a:hover {
+	color: #FBF138;
+}
+
+.main-button-scroll {
+	border: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border-radius: 26px;
+	width: 52px;
+	height: 52px;
+}
+
+.button-arrow {
+	width: 42.2px;
+	height: 42.2px;
+}
+
+/* -- main-banner-box -- */
+.main-banner-box {
+	display: flex;
+	position: absolute;
+	justify-content: flex-end;
+	max-width: 998px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	right: -75px;
+	z-index: -20;
+}
+
+.banner-box-blocks {
+	display: flex;
+	max-width: 790px;
+	width: 100%;
+	gap: 20px;
+}
+
+.banner-box-block__left {
+	background-image: linear-gradient(#FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+	flex-basis: 70%;
+	height: 850px;
+	opacity: .2;
+}
+
+.banner-box-block__right {
+	background-image: linear-gradient(#FDF9B6 0%, rgba(253, 249, 182, 0.7) 100%);
+	flex-basis: 30%;
+	height: 850px;
+	opacity: .2;
+}
+
+.banner-box-image {
+	position: absolute;
+	bottom: 0px; 
+	right: -75px;
+}
+
+.banner-box-image img {
+	max-width: 992px;
+	width: 100%;
+	overflow: hidden;
+}
+
+/*-------- SECTION UPCOMING-EVENTS -----------*/
+.upcoming-events {
+	margin-bottom: 160px;
+}
+
+.upcoming-events__title {
+	color: #2B3541;
+	font-size: 40px;
+	line-height: 1.25;
+	font-weight: 700;
+	padding: 40px 0px;
+}
+
+.upcoming-events-cards {
+	display: flex;
+	gap: 20px;
+}
+
+.upcoming-events-card {
+	position: relative;
+	flex: 1 1 33.333%;
+}
+
+.events-card__01 {
+	max-width: 367px;
+	width: 100%;
+	height: 600px;
+   background-image: url(../images/maraphon.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-card__02 {
+	max-width: 367px;
+	width: 100%;
+	height: 600px;
+   background-image: url(../images/trener.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.events-card__03 {
+	max-width: 367px;
+	width: 100%;
+	height: 600px;
+   background-image: url(../images/yoga.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.upcoming-events-card__gradient {
+	padding-top: 20px;
+	background: linear-gradient(180deg, rgb(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+	height: 100%;
+	width: 100%;
+}
+
+.upcoming-events-card__gradient:hover {
+	background: linear-gradient(180deg, rgb(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
+	transition: all .9s ease 0s;
+}
+
+.upcoming-events-card__button {
+	display: inline-block;
+	box-shadow: 0 13 24 0 rgba(70, 86, 106, 0.28);
+	background-color: #2B3541;
+	margin: 40px 0px 300px 30px;
+	padding: 20px 37px;
+	opacity: 0;
+	transition: all .3s ease 0s;
+}
+
+.upcoming-events-card__button a {
+	color: #FBF138;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: 3%;
+}
+
+.upcoming-events-card:hover .upcoming-events-card__button {
+	opacity: 1;
+}
+
+.upcoming-events-card__data {
+	margin: 12px 0px 20px 30px;
+}
+
+.upcoming-events-card__data p {
+	color: #2B3541;
+	opacity: .6;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.upcoming-events-card__title {
+	margin-left: 30px;
+}
+
+.upcoming-events-card__title h3 {
+	color: #2B3541;
+	max-width: 260px;
+	font-size: 28px;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+.upcoming-events-card__type {
+	background-color: #FBF138;
+	position: absolute;
+	bottom: 0px; 
+	right: 0px;
+	padding: 10px 20px;
+}
+
+.upcoming-events-card__type p {
+	display: inline-block;
+	color: #2B3541;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+.upcoming-events-card:hover .upcoming-events-card__type {
+	opacity: 0;
+}
+
+.upcoming-events-card__add {
+	opacity: 0;
+}
+
+/*-------- TRAINING SCHEDULE -----------*/
+.training-schedule-container {
+	margin-bottom: 100px;
+}
+
+.training-schedule-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 38px;
+}
+
+.training-schedule-title {
+	width: 356px;
+}
+
+.training-schedule-title h2 {
+	color: #2B3541;
+	font-size: 40px;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+.training-schedule-item {
+	padding: 20px;
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+.training-schedule-item-date {
+	text-align: end;
+}
+
+.schedule-item__active {
+	background-image: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+}
+
+.training-schedule-date p {
+	color: #2B3541;
+	font-size: 28px;
+	line-height: 1.25;
+	font-weight: 700;
+}
+
+.training-schedule-item-body p {
+	margin-top: 10px;
+	color: #2B3541;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 700;
+}
+
+.schedule-item__active .training-schedule-item-body__text {
+	opacity: 1;
+	height: 81px;
+	display: block;
+}
+
+.training-schedule-item-body__text p {
+	font-size: 18px;
+	line-height: 1.50;
+	font-weight: 400;
+}
+
+.training-schedule-item-body__text {
+	max-width: 307px;
+	width: 100%;
+	opacity: 0;
+	height: 0px;
+	transition: .3s;
+}
+
+.training-schedule-item:hover .training-schedule-item-body__text {
+	opacity: 1;
+	height: 81px;
+	display: block;
+}
+
+.training-schedule-cards {
+	display: grid;
+	grid-template-rows: 250px 60px 90px 280px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.training-schedule-item:nth-child(1) {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.training-schedule-item:nth-child(2) {
+	grid-column: 2/3;
+	grid-row: 1/4;
+}
+
+.training-schedule-item:nth-child(3) {
+	grid-column: 3/4;
+	grid-row: 1/3;
+}
+
+.training-schedule-item:nth-child(4) {
+	grid-column: 1/2;
+	grid-row: 2/5;
+}
+
+.training-schedule-item:nth-child(5) {
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
+.training-schedule-item:nth-child(6) {
+	grid-column: 3/4;
+	grid-row: 3/5;
+}
+
+@media(max-width: 768px) {
+	.training-schedule-cards {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 332px 224px 224px;
+		grid-auto-flow: row;
+	}
+   
+	.training-schedule-item:nth-child(1) {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	
+	.training-schedule-item:nth-child(4) {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	
+	.training-schedule-item:nth-child(2) {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	
+	.training-schedule-item:nth-child(5) {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	
+	.training-schedule-item:nth-child(3) {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	
+	.training-schedule-item:nth-child(6) {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+
+	.training-schedule-item-body__text {
+		max-width: 230px;
+	}
+
+	.training-schedule-item-body__text p {
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 479px) {
+	.training-schedule-cards {
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-auto-flow: row;
+	}
+
+	.training-schedule-item:nth-child(1) {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	
+	.training-schedule-item:nth-child(4) {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+	
+	.training-schedule-item:nth-child(2) {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+	
+	.training-schedule-item:nth-child(5) {
+		grid-column: 1/2;
+		grid-row: 4/5;
+	}
+	
+	.training-schedule-item:nth-child(3) {
+		grid-column: 1/2;
+		grid-row: 5/6;
+	}
+	
+	.training-schedule-item:nth-child(6) {
+		grid-column: 1/2;
+		grid-row: 6/7;
+	}
+}
+
+/*-------- SUBSCRIPTION FORM  -----------*/
+.subscription-form {
+	background-color: #F3F3F3;
+	margin-bottom: 100px;
+}
+
+.container-form {
+	display: flex;
+	justify-content: center;
+}
+
+.subscription-form-box {
+	padding: 80px 20px;
+}
+
+.form-title {
+	position: relative;
+	margin-bottom: 40px;
+}
+
+.form-title h2 {
+	color: #2B3541;
+	position: relative;
+	font-size: 40px;
+	line-height: 1.2;
+	font-weight: 700;
+	z-index: 5;
+}
+
+.form-title-circle {
+	position: absolute;
+	top: -20px;
+	left: -35px;
+	border-radius: 50%;
+	background-color: #FBF138;
+	width: 53px;
+	height: 53px;
+}
+
+.subscription-form__block input[type = "email"] {
+	margin-bottom: 10px;
+	background-color: #fff;
+	max-width: 372px;
+	width: 100%;
+	padding: 20px 20px 20px 20px;
+}
+
+.subscription-form__block input[type = "email"]:focus {
+	border: 1px solid #FBF138;
+}
+
+.subscription-form__block form {
+	margin-bottom: 13px;
+}
+
+.form-button {
+	background-color: #FBF138;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.2);
+	color: #2B3541;
+	padding: 18px 43px;
+	margin: 10px 0px 10px 10px;
+	font-size: 16px;
+	font-weight: 700;
+	transition: all .3s ease 0s;
+}
+
+.form-button:hover {
+	cursor: pointer;
+	color: #FBF138;
+	background-color: #2B3541;
+}
+
+.agreement label {
+	font-size: 11px;
+	font-weight: 400;
+}
+
+.agreement label a {
+	text-decoration: underline;
+	line-height: 4.0;
+}
+
+.checkbox {
+	transform: scale(1);
+	opacity: 0.8;
+}
+
+.checkbox:hover {
+	transform: scale(1.2);
+	opacity: 1;
+}
+
+.checkbox:checked,
+.checkbox:not(:checked){
+   position: absolute;
+   left:-9999px;
+}
+
+.checkbox:checked + label,
+.checkbox:not(:checked) + label{
+   position: relative;
+   padding-left: 35px;
+   cursor:pointer;
+}
+
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт активен */
+.checkbox:checked + label::before{
+   content:'';
+   position: absolute;
+   width: 19px;
+   height: 19px;
+   left: 3px;
+   top:calc(50% - 9px);
+   background-color: #2B3541;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+
+/* Стили для псевдоэлемента after с изображением, когда пункт активен */
+.checkbox:checked + label::after{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 12px;
+   transition: all .3s ease 0s;
+   opacity: 1;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(../images/galka.svg);
+}
+
+/* Стили для псевдоэлемента before с фоном и обводкой, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::before{
+   content:'';
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   left:0;
+   top:calc(50% - 10px);
+   background-color: transparent;
+   border-radius: 2px;
+   border: 2px solid #2B3541;
+}
+
+/* Стили для псевдоэлемента after с изображением, когда пункт НЕ активен */
+.checkbox:not(:checked) + label::after{
+   content:'';
+   position: absolute;
+   width: 12px;
+   height: 16px;
+   transition: all .2s ease;
+   opacity: 0;
+   left: 4px;
+   top: calc(50% - 6px);
+   background-position: 0 -12px;
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url(../images/galka.svg);
+}
+
+.radio:checked + label::before{
+   border-radius: 100%;
+}
+
+/*-------- ABOUT COMPANY -----------*/
+
+.about-company-description-box__image {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-company-description-box-title {
+	margin-bottom: 20px;
+}
+
+.about-company-description-box-title h2 {
+	color: #2B3541;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.about-company-description-box-text {
+	max-width: 483px;
+	padding-right: 10px;
+	width: 100%;
+	margin-bottom: 34px;
+}
+
+.about-company-description-box-text p {
+	color: #2B3541;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.about-company-description-box-button a {
+	color: #2B3541;
+	box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.2);
+	display: inline-block;
+	background-color: #FBF138;
+	padding: 20px 50px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.5;
+	transition: all .3s ease 0s;
+}
+
+.about-company-description-box-button a:hover {
+	color: #FBF138;
+	background-color: #2B3541;
+}
+
+.about-company-description-image img {
+	max-width: 583px;
+	width: 100%;
+}
+
+.about-company-benefits {
+	margin: 80px 0px 100px 0px;
+}
+
+.about-company-benefits-items {
+	display: flex;
+	justify-content: space-between;
+	gap: 67px;
+}
+
+@media(max-width: 992px) {
+	.about-company-benefits-items {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about-company-description-box-title h2 {
+		font-size: 26px;
+	}
+}
+
+@media(min-width: 673px) {
+	.about-company-footer__media {
+		display: none;
+	}
+}
+
+@media(max-width: 672px) {
+	.about-company-footer__media {
+		display: block;
+		margin-bottom: 50px;
+	}
+
+	.about-company-footer__media .about-company-description-box-button {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.about-company-button {
+		display: none;
+	}
+
+	.about-company-image {
+		display: none;
+	}
+}
+
+@media(max-width: 479px) {
+	.about-company-benefits-items {
+		display: grid;
+		grid-template-rows: 1fr 1fr 1frfr 1fr;
+		grid-template-columns: 1fr;
+	}
+
+	.about-company-description-box-title h2 {
+		font-size: 26px;
+	}
+
+	.about-company-footer__media {
+		display: block;
+	}
+}
+
+.about-company-benefits-items-title {
+	margin-bottom: 20px;
+}
+
+.about-company-benefits-items-title h3 {
+	color: #2B3541;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.about-company-benefits-items-text p {
+	color: #2B3541;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+/*-------- FOOTER -----------*/
+.footer {
+	background-color: #F3F3F3;
+	min-height: 149px;
+}
+
+.footer-block-nav {
+	align-items: center;
+	display: flex;
+	min-height: 96px;
+	justify-content: space-between;
+}
+
+.footer-menu-link {
+	color: #2B3541;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.footer-menu-link::after {
+	content: ' ';
+	width: 100%;
+	height: 1px;
+	background: transparent;
+	display: block;
+	transition: all .3s ease 0s;
+}
+
+.footer-menu-link:hover {
+	color: #181F27;
+}
+
+.footer-menu-link:hover::after {
+	background-color: #2B3541;
+}
+
+.footer-mail__socials {
+	align-items: center;
+	display: flex;
+	gap: 56px;
+}
+
+.footer-mail-title {
+	position: relative;
+}
+
+.footer-mail-title a {
+	color: #2B3541;
+	position: relative;
+	font-size: 16px;
+	font-weight: 700;
+	z-index: 5;
+}
+
+.footer-title-circle {
+	position: absolute;
+	top: -15px;
+	left: -18px;
+	border-radius: 50%;
+	background-color: #FBF138;
+	width: 25px;
+	height: 25px;
+}
+
+.footer-rights {
+	margin: 30px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-rights p {
+	color: #2B3541;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.footer-rights a {
+	color: #2B3541;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-decoration: underline;
+}
+
+
+/*-------- RESPONSIVE -----------*/
+@media(max-width: 1120px) {
+	.header-logo__nav {
+		flex-basis: 57%;
+	}
+
+	.header-nav {
+		gap: 15px;
+	}
+
+	.main-banner-box {
+		justify-content: center;
+	}
+
+	.banner-box-block__left {
+		height: 810px;
+	}
+
+	.banner-box-block__right {
+		height: 810px;
+	}
+
+	.banner-box-image {
+		bottom: 0px;
+		right: 60px;
+	}
+
+	.banner-content-title {
+		margin-top: 10px;
+	}
+
+	.banner-content-title h1 {
+		font-size: 32px;
+	}
+
+	.banner-content-text {
+		margin: 0px 0px 180px 0px;
+	}
+
+	.banner-content-text p {
+		margin-bottom: 33px;
+	}
+	
+}
+
+@media(min-width: 769px) {
+	.header-burger {
+		display: none;
+	}
+}
+
+@media(max-width: 992px) {
+	.header-logo__nav {
+		flex-basis: 70%;
+	}
+
+	.main-banner {
+		padding: 10px 0px 0px 0px;
+	}
+	
+	.main-banner-content {
+		max-width: 676px;
+	}
+
+	.banner-content-title {
+		margin-bottom: 20px;
+	}
+
+	.banner-content-title h1 {
+		font-size: 26px;
+	}
+
+	.banner-content-subtitle h3 {
+		font-size: 26px;
+	}
+	
+	.banner-content-subtitle h3 span {
+		font-size: 26px;
+	}
+
+	.banner-content-text {
+		margin-bottom: 170px;
+	}
+
+	.main-banner-box {
+		right: 0px;
+		justify-content: flex-end;
+	}
+
+	.banner-box-blocks {
+		max-width: 553px;
+		width: 100%;
+		gap: 6px;
+	}
+
+	.banner-box-block__left {
+		height: 529px;
+	}
+
+	.banner-box-block__right {
+		height: 529px;
+	}
+
+	.banner-box-image {
+		max-width: 559px;
+		width: 100%;
+		top: 77px;
+		right: 0px;
+	}
+
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: 360px;
+	}
+
+	.footer-block-nav {
+		flex-direction: column;
+	}
+
+	.footer-logo__nav {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.footer-mail__socials {
+		width: 100%;
+		margin-left: 0px;
+		justify-content: end;
+	}
+
+	.footer-socials {
+		justify-content: flex-end;
+	}
+}
+
+@media(max-width: 768px) {
+	.header-logo__nav {
+		flex-basis: 33%;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.nav-footer {
+		display: block;
+	}
+
+	.main-banner {
+		margin-bottom: 80px;
+		padding: 26px 0px 0px 0px;
+	}
+	
+	.main-banner-content {
+		max-width: 676px;
+	}
+
+	.banner-content-title {
+		margin-bottom: 20px;
+	}
+
+	.banner-content-title h1 {
+		font-size: 26px;
+	}
+
+	.banner-content-subtitle h3 {
+		font-size: 26px;
+	}
+	
+	.banner-content-subtitle h3 span {
+		font-size: 26px;
+	}
+
+	.banner-content-text {
+		margin-bottom: 54px;
+	}
+
+	.main-banner-box {
+		right: 0px;
+		justify-content: flex-end;
+	}
+
+	.banner-box-blocks {
+		max-width: 352px;
+		width: 100%;
+		gap: 6px;
+	}
+
+	.banner-box-block__left {
+		height: 429px;
+	}
+
+	.banner-box-block__right {
+		height: 429px;
+	}
+
+	.banner-box-image {
+		max-width: 399px;
+		width: 100%;
+		top: 107px;
+		right: 0px;
+	}
+
+	/*-------- section upcoming-events -----------*/
+	.upcoming-events {
+		margin-bottom: 80px;
+	}
+
+	.upcoming-events__title {
+		font-size: 26px;
+	}
+
+	.upcoming-events-card__title {
+		max-width: 144px;
+	}
+
+	.upcoming-events-card__title h3 {
+		font-size: 16px;
+	}
+
+	.upcoming-events-cards {
+		display: grid;
+		grid-template-rows: repeat(2, 0.5fr); 
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+    
+	.events-card__01 {
+		background-size: cover;
+		background-position-y: -30px;
+		max-width: 364px;
+		width: 100%;
+		height: 309px;
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.events-card__02 {
+		background-position-y: -30px;
+		max-width: 364px;
+		width: 100%;
+		height: 309px;
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	.events-card__03 {
+		max-width: 748px;
+		width: 100%;
+   	height: 336px;
+   	background-image: url(../images/yoga_2.jpg);
+   	background-repeat: no-repeat;
+   	background-size: cover;
+		background-position: center;
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+
+	.upcoming-events-card__type {
+		padding: 7px 12px;
+		max-width: 87px;
+		width: 100%;
+		left: 0px;
+	}
+
+	.upcoming-events-card__type p {
+		display: inline-block;
+		font-size: 12px;
+	}
+
+	.upcoming-events-card__add {
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		opacity: 1;
+	}
+
+	/*-------- TRAINING SCHEDULE -----------*/
+	.training-schedule-title {
+		max-width: 207px;
+	}
+
+	.training-schedule-title h2 {
+		font-size: 26px;
+	}
+
+	.training-schedule-date p {
+		font-size: 16px;
+	}
+
+	/*-------- subscription form  -----------*/
+	.subscription-form-box form {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.subscription-form-box form input {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	.subscription-form-box .agreement {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	.subscription-form-box .form-button {
+		margin: 0px;
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+
+.form-title {
+		text-align: center;
+		max-width: 201px;
+		margin-bottom: 40px;
+		width: 100%;
+	}
+
+	.form-title h2 {
+		font-size: 26px;
+		line-height: 1.0;
+	}
+}
+
+@media(max-width: 672px) {
+	.banner-box-image__girl {
+		opacity: .6;
+	}
+
+	.footer-logo__nav {
+		flex-direction: column;
+		gap: 28px;
+		margin-bottom: 20px;
+	}
+
+	.nav-footer {
+		width: 100%;
+	}
+
+	.nav-footer ul {
+		justify-content: space-between;
+	}
+
+	.footer-mail__socials {
+		justify-content: space-between;
+	}
+
+	.footer-rights {
+		gap: 20px;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media(max-width: 479px) {
+	.banner-content-title h1 {
+		font-size: 21px;
+		letter-spacing: 2.5pt;
+	}
+
+	.header-logo__nav {
+		flex-basis: 50%;
+	}
+
+	.footer-menu-link {
+		font-size: 12px;
+	}
+
+	.main-button-scroll {
+		display: none;
+	}
+	
+	.main-banner-box {
+		position: absolute;
+		left: 0px;
+		top: 351px;
+	}
+
+	.banner-box-block__left {
+		height: 359px;
+	}
+
+	.banner-box-block__right {
+		height: 359px;
+	}
+	
+	.banner-box-image {
+		top: 20px;
+	}
+
+	.banner-box-image__girl {
+		opacity: 1;
+	}
+
+/*--upcoming-events--*/
+	.upcoming-events {
+		margin-top: 457px;
+	}
+
+	.upcoming-events__title {
+		font-size: 26px;
+	}
+
+	.upcoming-events-card__data {
+		margin: 0px 0px 0px 10px;
+	}
+
+	.upcoming-events-card__data p {
+		font-size: 12px;
+	}
+
+	.upcoming-events-card__title {
+		margin: 45px 0px 0px 10px;
+		max-width: 117px;
+	}
+
+	.upcoming-events-card__title h3 {
+		font-size: 16px;
+	}
+
+	.upcoming-events-card__button {
+		margin-left: 10px;
+		padding: 10px 20px;
+	}
+
+	.events-card__01 {
+		background-position-y: 0px;
+		max-width: 238px;
+		width: 100%;
+		height: 309px;
+	}
+
+	.events-card__02 {
+		max-width: 238px;
+		width: 100%;
+		background: url('../images/trener.jpg') -140px -120px no-repeat;
+		height: 309px;
+	}
+
+	.events-card__03 {
+		max-width: 479px;
+		width: 100%;
+		background: url('../images/yoga_2.jpg') -320px 0px no-repeat;
+		height: 336px;
+	}
+}
+
+@media(max-width: 368px) {
+	.banner-content-title h1 {
+		font-size: 21px;
+	}
+
+	.main-banner-box {
+		position: absolute;
+		left: 0px;
+		top: 391px;
+	}
+
+	.banner-box-block__left {
+		height: 256px;
+	}
+
+	.banner-box-block__right {
+		height: 256px;
+	}
+	
+	.banner-box-image  {
+		left: 0px;
+		top: 20px;
+	}
+}
+
+
+/*-------- MODAL -----------*/
+.burger {
+	width: 34px;
+	height: 22px;
+	background: url('../images/burger.svg') 0 0 no-repeat;
+	background-color: transparent;
+	background-size: contain;
+	border: none;
+	cursor: pointer;
+}
+
+.modal {
+	background-color: #F3F3F3;
+	max-width: 567px;
+	width: 100%;
+	text-align: end;
+	position: absolute;
+	top: -600px;
+	left: 0px;
+	margin: 15px auto 0px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+
+.modal-container {
+	padding: 10px 10px;
+}
+
+.modal .header-modal {
+	display: flex;
+	justify-content: space-between;
+	padding: 29px 0px;
+}
+
+.burger-close {
+	background: url('../icons/close.svg') no-repeat;
+	width: 22px;
+	height: 22px;
+	background-color: transparent;
+	background-size: contain;
+	border: none;
+	cursor: pointer;
+}
+
+.modal .header-nav {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 23px;
+	margin: 0px;
+}
+
+.modal .header-menu-item {
+	text-align: start;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.modal .header-menu-item:not(:last-child) {
+	border-bottom: 1px solid #2B3541;
+}
+
+.modal-socials {
+	padding-bottom: 20px; 
+	align-items: flex-end;
+}
+
+.modal-block-footer {
+	background-color: #2B3541;
+	height: 135px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+

@@ -1,12 +1,474 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet" /> 
+	<link rel="stylesheet" href="style/main.css">
+	<title>Диплом</title>
 </head>
+
 <body>
-    
+	<div class="wrapper">
+		<header class="header">
+			<div class="header-container container">
+				<div class="block-nav">
+					<div class="header-logo__nav">
+						<div class="header-logo">
+							<a href="#" class="header-logo-link"></a>
+						</div>
+						<div class="header-burger">
+							<button class="burger" onclick = "openModal()"></button>
+						</div>
+						<nav>
+							<ul class="header-nav">
+								<li class="header-menu-item">
+									<a href="#upcoming-events-scroll" class="header-menu-link scroll">Мероприятие</a>
+								</li>
+								<li class="header-menu-item">
+									<a href="#training-schedule-section" class="header-menu-link scroll">Расписание</a>
+								</li>
+								<li class="header-menu-item">
+									<a href="#about-company-section" class="header-menu-link scroll">О компании</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-socials">
+						<a href="#" target = "_blank" class="header-socials__contakt">
+							<img src="icons/IN.svg" alt="Контакт">
+						</a>
+						<a href="#" target = "_blank" class="header-socials__contakt">
+							<img src="icons/FB.svg" alt="Фэйсбук">
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="container">
+				<div class="main-banner">
+					<div class="main-banner-content">
+						<div class="banner-content-title">
+							<h1>онлайн&nbsp;тренировки любой&nbsp;сложности</h1>
+						</div>
+						<div class="banner-content-subtitle">
+							<h3> <span>&gt;15</span> тренировок </h3> 
+						</div>
+						<div class="banner-content-text">
+							<p>в области&nbsp;спортивной физиологии&nbsp;и нутрициологии</p>
+							<button class="main-button button" id = "main-button">
+								<a href="#">узнать подробнее</a>
+							</button>
+						</div>
+						<a href = "#upcoming-events-scroll" class="main-button-scroll scroll">
+							<img src="icons/arrow.svg" alt="Галка" class = "button-arrow">
+						</a>
+					</div>
+
+					<div class="main-banner-box">
+						<div class="banner-box-blocks">
+							<div class="banner-box-block__left"></div>
+							<div class="banner-box-block__right"></div>
+							<div class="banner-box-image">
+								<img src="images/girl.png" alt="Бегунья" class = "banner-box-image__girl">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="upcoming-events" id = "upcoming-events-scroll">
+				<div class="upcoming-events-container container">
+					<h2 class = "upcoming-events__title">Ближайшие события</h2>
+					<div class="upcoming-events-cards">
+						<div class="upcoming-events-card events-card__01">
+							<div class="upcoming-events-card__gradient">
+								<div class="upcoming-events-card__data">
+									<p>29.06-4.07</p>
+								</div>
+								<div class="upcoming-events-card__title">
+									<h3>Марафон выносливости</h3>
+								</div>
+								<div class="upcoming-events-card__button">
+									<a href="#">участвовать</a>
+								</div>
+								<img src = "images/add.svg" class="upcoming-events-card__add" alt = "плюсик">
+								<div class="upcoming-events-card__type">
+									<p>марафон</p>
+								</div>
+							</div>
+						</div>
+		
+						<div class="upcoming-events-card events-card__02">
+							<div class="upcoming-events-card__gradient">
+								<div class="upcoming-events-card__data">
+									<p>9.07</p>
+								</div>
+								<div class="upcoming-events-card__title">
+									<h3>Как стать тренером?</h3>
+								</div>
+								<div class="upcoming-events-card__button">
+									<a href="#">участвовать</a>
+								</div>
+								<img src = "images/add.svg" class="upcoming-events-card__add" alt = "плюсик">
+								<div class="upcoming-events-card__type">
+									<p class = "upcoming-events-card__type">вебинар</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="upcoming-events-card events-card__03">
+							<div class="upcoming-events-card__gradient">
+								<div class="upcoming-events-card__data">
+									<p>15.07</p>
+								</div>
+								<div class="upcoming-events-card__title">
+									<h3>Йога, как стиль жизни</h3>
+								</div>
+								<div class="upcoming-events-card__button">
+									<a href="#">участвовать</a>
+								</div>
+								<img src = "images/add.svg" class="upcoming-events-card__add" alt = "плюсик">
+								<div class="upcoming-events-card__type">
+									<p class = "upcoming-events-card__type">вебинар</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id = "training-schedule-section" class="training-schedule">
+				<div class="training-schedule-container container">
+					<div class="training-schedule-header">
+						<div class="training-schedule-title">
+							<h2>Расписание тренировок</h2>
+						</div>
+						<div class="training-schedule-date">
+							<p>22 - 28 июня</p>
+						</div>
+					</div>
+
+					<div class="training-schedule-cards">
+						<div class="training-schedule-item">
+							<div class="training-schedule-item-date">
+								<p>22 июня, 10:00</p>
+							</div>
+							<div class="training-schedule-item-content">
+								<div class="training-schedule-item-body">
+									<img src="images/body.svg" alt="Тело">
+									<p>Функциональный тренинг</p>
+								</div>
+								<div class="training-schedule-item-body__text">
+									<p>
+										Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="training-schedule-item">
+							<div class="training-schedule-item-date">
+								<p>24 июня, 10:00</p>
+							</div>
+							<div class="training-schedule-item-content">
+								<div class="training-schedule-item-body">
+									<img src="images/bottle.svg" alt="Бутылка">
+									<p>Body sculpt</p>
+								</div>
+								<div class="training-schedule-item-body__text">
+									<p>
+										Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="training-schedule-item">
+							<div class="training-schedule-item-date">
+								<p>26 июня, 11:00</p>
+							</div>
+							<div class="training-schedule-item-content">
+								<div class="training-schedule-item-body">
+									<img src="images/dumbbell.svg" alt="Гантеля">
+									<p>L.A.B.</p>
+								</div>
+								<div class="training-schedule-item-body__text">
+									<p>
+										Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="training-schedule-item schedule-item__active">
+							<div class="training-schedule-item-date">
+								<p>23 июня, 10:00</p>
+							</div>
+							<div class="training-schedule-item-content">
+								<div class="training-schedule-item-body">
+									<img src="images/jump.svg" alt="Скакалка">
+									<p>Силовой микс</p>
+								</div>
+								<div class="training-schedule-item-body__text">
+									<p>
+										Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="training-schedule-item">
+							<div class="training-schedule-item-date">
+								<p>25 июня, 11:00</p>
+							</div>
+							<div class="training-schedule-item-content">
+								<div class="training-schedule-item-body">
+									<img src="images/heart.svg" alt="Сердце">
+									<p>Дыхательные практики</p>
+								</div>
+								<div class="training-schedule-item-body__text">
+									<p>
+										Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="training-schedule-item">
+							<div class="training-schedule-item-date">
+								<p>27 июня, 10:00</p>
+							</div>
+							<div class="training-schedule-item-content">
+								<div class="training-schedule-item-body">
+									<img src="images/weight.svg" alt="Гиря">
+									<p>Комплексная разминка</p>
+								</div>
+								<div class="training-schedule-item-body__text">
+									<p>
+										Упражнения помогут создать красивый рельеф и прийти в спортивную форму.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		   </section>
+
+			<section class="subscription-form">
+				<div class="container-form container">
+					<div class="subscription-form-box">
+						<div class="form-title">
+							<h2>Подпишитесь на рассылку</h2>
+							<div class="form-title-circle"></div>
+						</div>
+						<div class="subscription-form__block">
+							<form action="#" method = "post">
+								<input type="email" placeholder = "Ваш email" name = "email" required/>
+								<button type = "submit" class = "form-button">Подписаться</button>
+						      <div class="agreement">
+									<input type="checkbox" id = "01" class = "checkbox">
+									<label for="01">Согласен&nbsp;с&nbsp;обработкой<a href="#" target = "_blank">Персональных&nbsp;данных</a></label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id = "about-company-section" class="about-company">
+				<div class="about-company-container container">
+					<div class="about-company-content">
+						<div class="about-company-description-box__image">
+							<div class="about-company-description-box">
+								<div class="about-company-description-box-title">
+									<h2>О компании</h2>
+								</div>
+								<div class="about-company-description-box-text">
+									<p>
+										Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! 
+										Оставайтесь с нами и вы сами увидите, что мы проводим не только онлайн-тренировки.
+									</p>
+								</div>
+								<div class="about-company-button">
+									<div class="about-company-description-box-button">
+										<a href="#">Записаться</a>
+									</div>
+								</div>	
+							</div>
+							<div class="about-company-image">
+								<div class="about-company-description-image">
+									<img src="images/boxer.jpg" alt="Бодибилдерша">
+								</div>
+							</div>
+						</div>
+						<div class="about-company-benefits">
+							<div class="about-company-benefits-items">
+								<div class="about-company-benefits-item">
+									<div class="about-company-benefits-items-title">
+										<h3>Экономия времени</h3>
+									</div>
+									<div class="about-company-benefits-items-text">
+										<p>Не нужно тратить время на дорогу</p>
+									</div>
+								</div>
+								<div class="about-company-benefits-item">
+									<div class="about-company-benefits-items-title">
+										<h3>Индивидуальный подход</h3>
+									</div>
+									<div class="about-company-benefits-items-text">
+										<p>Внимание тренера пренадлежит только вам</p>
+									</div>
+								</div>
+								<div class="about-company-benefits-item">
+									<div class="about-company-benefits-items-title">
+										<h3>Экономия денег</h3>
+									</div>
+									<div class="about-company-benefits-items-text">
+										<p>Средняя цена одной тренировки - 700₽</p>
+									</div>
+								</div>
+								<div class="about-company-benefits-item">
+									<div class="about-company-benefits-items-title">
+										<h3>Опытный персонал</h3>
+									</div>
+									<div class="about-company-benefits-items-text">
+										<p>Стаж работы у наших тренеров от 5 лет</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="about-company-footer__media">
+							<div class="about-company-description-box-button">
+								<a href="#">Записаться</a>
+							</div>
+							<div class="about-company-description-image">
+								<img src="images/boxer.jpg" alt="Бодибилдерша">
+							</div>	
+						</div>
+					</div>
+				</div>   
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-container container">
+				<div class="footer-content">
+					<div class="footer-block-nav">
+						<div class="header-logo__nav footer-logo__nav">
+							<div class="header-logo">
+								<a href="#" class="header-logo-link"></a>
+							</div>
+							<nav class = "nav-footer">
+								<ul class="header-nav footer-nav">
+									<li class="header-menu-item">
+										<a href="#upcoming-events-scroll" class="footer-menu-link scroll">Мероприятие</a>
+									</li>
+									<li class="header-menu-item">
+										<a href="#training-schedule-section" class="footer-menu-link scroll">Расписание</a>
+									</li>
+									<li class="header-menu-item">
+										<a href="#about-company-section" class="footer-menu-link scroll">О компании</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+
+						<div class="footer-mail__socials">
+							<div class="footer-mail-title">
+								<a href = "mailto:info@freefit.com">info@freefit.com</a>
+								<div class="footer-title-circle"></div>
+							</div>
+							<div class="header-socials footer-socials">
+								<a href="#" target = "_blank" class="header-socials__contakt">
+									<img src="icons/IN.svg" alt="Контакт">
+								</a>
+								<a href="#" target = "_blank" class="header-socials__contakt">
+									<img src="icons/FB.svg" alt="Фэйсбук">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-rights">
+						<p>&copy; 2020г Все права защищены</p>
+						<p>Сделано в рамках курса учебной платформы <a href="https://annblok.ru/workshop" target="_blank">Annblok</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="modal" id = "modal">
+		<div class="modal-container container">
+			<div class="header-modal">
+				<div class="header-logo">
+					<a href="#" class="header-logo-link"></a>
+				</div>
+				<button class="burger-close" onclick="closeModal()"></button>
+			</div>
+			<ul class="header-nav">
+				<li class="header-menu-item">
+					<a href="#upcoming-events-scroll" class="header-menu-link scroll">Мероприятие</a>
+				</li>
+				<li class="header-menu-item">
+					<a href="#training-schedule-section" class="header-menu-link scroll">Расписание</a>
+				</li>
+				<li class="header-menu-item">
+					<a href="#about-company-section" class="header-menu-link scroll">О компании</a>
+				</li>
+			</ul>
+			<div class="modal-socials">
+				<div class="header-socials">
+					<a href="#" class="header-socials__contakt">
+						<img src="icons/IN.svg" alt="Контакт">
+					</a>
+					<a href="#" class="header-socials__contakt">
+						<img src="icons/FB.svg" alt="Фэйсбук">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="modal-block-footer">
+			<button class="main-button" id = "main-button">
+				<a href="#">узнать подробнее</a>
+			</button>
+		</div>
+	</div>
+	
+	<script>
+		// Menu
+		function openModal() {
+         document.getElementById("modal").style.top = "0px";
+       }
+
+       function closeModal() {
+         document.getElementById("modal").style.top = "-600px";
+       }
+
+		 // Smooth scroll
+		 const links = document.querySelectorAll(".scroll");
+
+		for (const link of links) {
+		link.addEventListener("click", clickHandler);
+		}
+
+		function clickHandler(e) {
+		e.preventDefault();
+		const href = this.getAttribute("href");
+
+		document.querySelector(href).scrollIntoView({
+			behavior: "smooth"
+		});
+		}
+
+	</script>
 </body>
 </html>
