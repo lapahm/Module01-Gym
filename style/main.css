@@ -3,21 +3,29 @@
   margin: 0;
   border: 0;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -27,7 +35,9 @@ html, body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 input::-ms-clear {
@@ -40,7 +50,8 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 a:hover {
@@ -52,7 +63,12 @@ ul li {
 img {
   vertical-align: top;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 }
@@ -265,9 +281,10 @@ body {
   position: absolute;
   bottom: 0px;
   right: -75px;
+  max-width: 996px;
 }
 .banner-box-image img {
-  max-width: 992px;
+  max-width: 996px;
   width: 100%;
   overflow: hidden;
 }
@@ -340,17 +357,16 @@ body {
   background-color: #2b3541;
   margin: 40px 0px 300px 30px;
   padding: 20px 37px;
-  opacity: 0;
+  display: none;
   transition: all 0.3s ease 0s;
-}
-.upcoming-events-card__button a {
   color: #fbf138;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 3%;
 }
+
 .upcoming-events-card:hover .upcoming-events-card__button {
-  opacity: 1;
+  display: block;
 }
 .upcoming-events-card__data {
   margin: 12px 0px 20px 30px;
@@ -411,12 +427,13 @@ body {
 }
 .training-schedule-item {
   padding: 20px;
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
 }
+
 .training-schedule-item-date {
   text-align: end;
 }
@@ -426,6 +443,7 @@ body {
     #fbf138 0%,
     rgba(253, 249, 182, 0.45) 100%
   );
+  border: none;
 }
 .training-schedule-date p {
   color: #2b3541;
@@ -539,6 +557,12 @@ body {
   }
 }
 
+@media (max-width: 506px) {
+  .upcoming-events-cards:hover .upcoming-events-card__button {
+    display: none;
+  }
+}
+
 @media (max-width: 479px) {
   .training-schedule-cards {
     grid-template-columns: repeat(1, 1fr);
@@ -637,10 +661,12 @@ body {
   background-color: #2b3541;
 }
 .agreement label {
+  color: rgb(43, 53, 65, 0.5);
   font-size: 11px;
   font-weight: 400;
 }
 .agreement label a {
+  color: rgb(43, 53, 65, 0.5);
   text-decoration: underline;
   line-height: 4;
 }
@@ -660,7 +686,7 @@ body {
 .checkbox:checked + label,
 .checkbox:not(:checked) + label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 25px;
   cursor: pointer;
 }
 .checkbox:checked + label::before {
@@ -740,7 +766,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
-.about-company-description-box-button a {
+.about-company-description-box-button {
   color: #2b3541;
   box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.2);
   display: inline-block;
@@ -751,7 +777,7 @@ body {
   line-height: 1.5;
   transition: all 0.3s ease 0s;
 }
-.about-company-description-box-button a:hover {
+.about-company-description-box-button:hover {
   color: #fbf138;
   background-color: #2b3541;
 }
@@ -791,6 +817,11 @@ body {
 }
 
 @media (max-width: 672px) {
+  .banner-banner-box {
+    /* width: 100vw; */
+    /* WTF */
+  }
+
   .about-company-footer__media {
     display: block;
     margin-bottom: 50px;
@@ -914,20 +945,20 @@ body {
 }
 
 .footer-rights p {
-  color: #2b3541;
+  color: rgba(43, 53, 65, 0.3);
   font-size: 14px;
   font-weight: 400;
 }
 
 .footer-rights a {
-  color: #2b3541;
+  color: rgba(43, 53, 6, 0.3);
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   text-decoration: underline;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1140px) {
   .header-logo__nav {
     flex-basis: 57%;
   }
@@ -951,6 +982,12 @@ body {
   .banner-box-image {
     bottom: 0px;
     right: 60px;
+  }
+
+  .banner-box-image__girl {
+    max-width: 992px;
+    width: 100%;
+    overflow: hidden;
   }
 
   .banner-content-title {
@@ -977,6 +1014,9 @@ body {
 }
 
 @media (max-width: 992px) {
+  .upcoming-events-card__title h3 {
+    margin-right: 16px;
+  }
   .header-logo__nav {
     flex-basis: 70%;
   }
@@ -1035,6 +1075,14 @@ body {
     right: 0px;
   }
 
+  .banner-box-image__girl {
+    position: absolute;
+    right: 0;
+    max-width: 399px;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .footer-content {
     display: flex;
     flex-direction: column;
@@ -1063,13 +1111,17 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .header-logo__nav {
     flex-basis: 33%;
   }
 
   nav {
     display: none;
+  }
+
+  .upcoming-events-card__title h3 {
+    font-size: 16px;
   }
 
   .nav-footer {
@@ -1156,7 +1208,8 @@ body {
   .events-card__01 {
     background-size: cover;
     background-position-y: -30px;
-    max-width: 364px;
+    /* max-width: 364px; */
+    max-width: 398px;
     width: 100%;
     height: 309px;
     grid-column: 1/2;
@@ -1165,7 +1218,7 @@ body {
 
   .events-card__02 {
     background-position-y: -30px;
-    max-width: 364px;
+    max-width: 398px;
     width: 100%;
     height: 309px;
     grid-column: 2/3;
@@ -1173,7 +1226,7 @@ body {
   }
 
   .events-card__03 {
-    max-width: 748px;
+    max-width: 815px;
     width: 100%;
     height: 336px;
     background-image: url(../images/yoga_2.jpg);
@@ -1239,7 +1292,7 @@ body {
   }
 
   .form-title {
-    text-align: center;
+    margin: 0 auto;
     max-width: 201px;
     margin-bottom: 40px;
     width: 100%;
@@ -1251,15 +1304,37 @@ body {
   }
 }
 
-@media (max-width: 672px) {
-  .banner-box-image__girl {
-    opacity: 0.6;
+@media (max-width: 480px) {
+  .main-banner {
+    height: fit-content !important;
   }
+}
 
+@media (max-width: 672px) {
   .footer-logo__nav {
     flex-direction: column;
     gap: 28px;
     margin-bottom: 20px;
+  }
+
+  .main-banner {
+    height: 800px;
+  }
+
+  .main-banner-box {
+    position: absolute;
+    top: 364px;
+    display: block;
+  }
+
+  .main-button-scroll {
+    display: none;
+  }
+
+  .banner-box-image {
+    position: absolute;
+    left: 0;
+    top: 18px;
   }
 
   .nav-footer {
@@ -1278,10 +1353,31 @@ body {
     gap: 20px;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
 
 @media (max-width: 479px) {
+  .training-schedule-item {
+    height: 114px;
+  }
+
+  .training-schedule-item-body img {
+    height: 39px;
+  }
+  .training-schedule-item-body p {
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    left: 120px;
+    margin-right: 24px;
+    margin-top: 0;
+  }
+
+  .training-schedule-item-body__text {
+    display: none !important;
+  }
+
   .banner-content-title h1 {
     font-size: 21px;
     letter-spacing: 2.5pt;
@@ -1315,10 +1411,6 @@ body {
 
   .banner-box-image {
     top: 20px;
-  }
-
-  .banner-box-image__girl {
-    opacity: 1;
   }
 
   .upcoming-events {
@@ -1374,6 +1466,14 @@ body {
 }
 
 @media (max-width: 368px) {
+  .about-company-description-box-button {
+    width: 100%;
+  }
+
+  #main-button {
+    width: 100%;
+  }
+
   .banner-content-title h1 {
     font-size: 21px;
   }
@@ -1409,20 +1509,21 @@ body {
 }
 
 .modal {
-  background-color: #f3f3f3;
   max-width: 567px;
   width: 100%;
   text-align: end;
   position: absolute;
   top: -600px;
   left: 0px;
-  margin: 15px auto 0px;
+  /* margin: 15px auto 0px; */
   box-sizing: border-box;
   transition: 0.5s;
 }
 
 .modal-container {
+  background-color: #f3f3f3;
   padding: 10px 10px;
+  height: 331px;
 }
 
 .modal .header-modal {
@@ -1444,7 +1545,7 @@ body {
 .modal .header-nav {
   flex-direction: column;
   align-items: flex-start;
-  gap: 23px;
+  gap: 15px;
   margin: 0px;
 }
 
@@ -1464,9 +1565,13 @@ body {
 }
 
 .modal-block-footer {
-  background-color: #2b3541;
+  background-color: rgb(43, 53, 65, 0.4);
   height: 135px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-block-footer .main-button {
+  display: none;
 }
