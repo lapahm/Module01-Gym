@@ -300,7 +300,7 @@ body {
 }
 .upcoming-events-cards {
   display: flex;
-  gap: 20px;
+  gap: 11px 20px;
 }
 .upcoming-events-card {
   position: relative;
@@ -817,11 +817,6 @@ body {
 }
 
 @media (max-width: 672px) {
-  .banner-banner-box {
-    /* width: 100vw; */
-    /* WTF */
-  }
-
   .about-company-footer__media {
     display: block;
     margin-bottom: 50px;
@@ -842,6 +837,9 @@ body {
 }
 
 @media (max-width: 479px) {
+  .main-banner-box {
+    height: 800px;
+  }
   .about-company-benefits-items {
     display: grid;
     grid-template-rows: 1fr 1fr 1frfr 1fr;
@@ -1179,7 +1177,7 @@ body {
   .banner-box-image {
     max-width: 399px;
     width: 100%;
-    top: 107px;
+    top: 100px;
     right: 0px;
   }
   .upcoming-events {
@@ -1202,7 +1200,7 @@ body {
     display: grid;
     grid-template-rows: repeat(2, 0.5fr);
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 11px 20px;
   }
 
   .events-card__01 {
@@ -1304,27 +1302,30 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 530px) {
   .main-banner {
-    height: fit-content !important;
-  }
-}
-
-@media (max-width: 672px) {
-  .footer-logo__nav {
-    flex-direction: column;
-    gap: 28px;
-    margin-bottom: 20px;
+    height: 793px;
   }
 
-  .main-banner {
-    height: 800px;
+  .banner-box-blocks {
+    min-width: 100% !important;
+    overflow: visible !important;
+    min-height: 49% !important;
   }
 
   .main-banner-box {
     position: absolute;
     top: 364px;
     display: block;
+    width: 100% !important;
+    height: 55% !important;
+  }
+
+  .banner-box-block__left,
+  .banner-box-block__right {
+    position: relative;
+    top: 90px;
+    max-height: 335px !important;
   }
 
   .main-button-scroll {
@@ -1335,6 +1336,41 @@ body {
     position: absolute;
     left: 0;
     top: 18px;
+    height: 284px;
+    min-width: 100% !important;
+  }
+
+  .banner-box-image__girl {
+    width: 100%;
+    min-width: 100% !important;
+  }
+}
+
+@media (max-width: 570px) {
+  .banner-box-image {
+    max-width: 70% !important;
+  }
+  .banner-box-blocks {
+    height: 352px !important;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 664px) {
+  .banner-box-image__girl {
+    max-width: 80% !important;
+  }
+  .banner-box-blocks {
+    max-height: 370px !important;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 672px) {
+  .footer-logo__nav {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 20px;
   }
 
   .nav-footer {
@@ -1395,6 +1431,10 @@ body {
     display: none;
   }
 
+  .main-banner {
+    height: fit-content !important;
+  }
+
   .main-banner-box {
     position: absolute;
     left: 0px;
@@ -1402,11 +1442,11 @@ body {
   }
 
   .banner-box-block__left {
-    height: 359px;
+    height: 300px;
   }
 
   .banner-box-block__right {
-    height: 359px;
+    height: 300px;
   }
 
   .banner-box-image {
@@ -1416,6 +1456,10 @@ body {
   .upcoming-events {
     margin-top: 457px;
   }
+
+  /* .upcoming-events-cards {
+    gap: 11px 20px !important;
+  } */
 
   .upcoming-events__title {
     font-size: 26px;
@@ -1460,7 +1504,7 @@ body {
   .events-card__03 {
     max-width: 479px;
     width: 100%;
-    background: url("../images/yoga_2.jpg") -320px 0px no-repeat;
+    background: url("../images/yoga_2.jpg") -290px 0px no-repeat;
     height: 336px;
   }
 }
@@ -1468,6 +1512,12 @@ body {
 @media (max-width: 368px) {
   .about-company-description-box-button {
     width: 100%;
+  }
+
+  .footer-rights,
+  .footer-rights p,
+  .footer-rights a {
+    font-size: 10px;
   }
 
   #main-button {
@@ -1484,12 +1534,16 @@ body {
     top: 391px;
   }
 
+  .banner-box-blocks {
+    height: 296px !important;
+  }
+
   .banner-box-block__left {
-    height: 256px;
+    height: 207px;
   }
 
   .banner-box-block__right {
-    height: 256px;
+    height: 207px;
   }
 
   .banner-box-image {
